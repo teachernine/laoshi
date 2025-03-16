@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Deploy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl font-bold text-gray-800">老师相关命令</h1>
+        <h2>以下所有命令适用于管理群</h2>
+        <p class="text-gray-600 mt-2">1. 
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/listallteachers</code><br/>
+            会从第一条开始，依次列出所有老师，每次列出15.列到最后一条后从头开始。 <br/>
+            结果格式： 第一列为数据的系统ID,所有操作均以此ID为准， 第二列为老师账号ID;
+            </p>
+        <p class="text-gray-600 mt-2">2. 
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/teacherid [id]</code><br/>
+            会从[id]开始，列出15条老师数据。 <br/>
+            结果格式： 第一列为数据的系统ID,所有操作均以此ID为准， 第二列为老师账号ID;<br/><br/>
+            命令示例: <br/>
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/teacherid 123</code><br/>
+            说明: 从系统ID为123号开始，列出后边的15条老师数据；
+            </p>
+        <p class="text-gray-600 mt-2">3. 
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/teacherinfo [id]</code><br/>
+            列出id为[id]的老师的详细数据。 <br/>
+            命令示例: <br/>
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/teacherinfo 123</code><br/>
+            说明: 列出系统ID为123号的老师数据；
+            </p>
+        <p class="text-gray-600 mt-2">4. 
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/setteachername [id] [name]</code><br/>
+            将id为[id]的老师的呢称改为[name]。 <br/>
+            命令示例: <br/>
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/setteachername 123 张雨绮</code><br/>
+            说明: 将系统ID为123号的老师的呢称改为张雨绮；
+            </p>
+        <p class="text-gray-600 mt-2">5. 
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/setteacheraddress [id] [address]</code><br/>
+            将id为[id]的老师的地址改为[address]。 <br/>
+            命令示例: <br/>
+        <code class="bg-gray-200 text-sm text-gray-800 p-1 rounded-md">/setteachername 123 武候</code><br/>
+            说明: 将系统ID为123号的老师的地址改为武候；
+            </p>
+        
+    </div>
+</body>
+</html>
